@@ -1,0 +1,54 @@
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+ 
+  .animated-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px; 
+    position: relative;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
+  }
+  
+ 
+  .underline {
+    width: 150px;
+    height: 4px;
+    background-color: #8a2be2; 
+    margin-top: 10px;
+    border-radius: 2px;
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  @keyframes slideIn {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 150px;
+    }
+  }
+  
